@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Box extends Model
+{
+    use HasFactory;
+
+    protected $table = 'boxes';
+
+    protected $fillable = [
+        'id_size',
+        'id_presentation',
+        'code',
+        'name',
+        'kilograms',
+        'price',
+        'cost',
+        'description',
+        'stock',
+        'status',
+    ];
+}
